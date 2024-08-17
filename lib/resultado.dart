@@ -16,7 +16,7 @@ class _ResultadoState extends State<Resultado> {
 
     var numero = Random().nextInt(2);
 
-    var escolha = opcoes[numero];
+    var resultado = opcoes[numero];
 
     return Center(
       child: Container(
@@ -25,7 +25,7 @@ class _ResultadoState extends State<Resultado> {
           mainAxisAlignment: MainAxisAlignment.center,
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: [
-            Image.asset(escolha),
+            Image.asset(resultado),
             GestureDetector(
               onTap: (){Navigator.pop(context);},
               child: Image.asset("images/botao_voltar.png"),
