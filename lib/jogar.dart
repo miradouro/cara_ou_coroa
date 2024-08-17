@@ -1,4 +1,4 @@
-import 'package:cara_ou_coroa/tela_secundaria.dart';
+import 'package:cara_ou_coroa/resultado.dart';
 import 'package:flutter/material.dart';
 
 class Jogar extends StatefulWidget {
@@ -32,7 +32,7 @@ class _JogarState extends State<Jogar> {
                     Navigator.push(
                       context,
                       MaterialPageRoute(
-                        builder: (context) => TelaSecundaria(),
+                        builder: (context) => Resultado(),
                       ),
                     );
                     },
